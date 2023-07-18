@@ -1,16 +1,24 @@
 {
-  "name": "cli",
+  "name": "cujsnote",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "tsc --watch --preserveWatchOutput"
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "commander": "^11.0.0",
-    "local-api": "^1.0.0"
+    "@cujsnote/local-api": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.2",

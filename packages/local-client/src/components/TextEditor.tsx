@@ -16,7 +16,6 @@ interface TextEditorProps {
 
 const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
 	const [editing, setEditing] = useState(false);
-	const [value] = useState('# Header');
 	const { updateCell } = useActions();
 
 

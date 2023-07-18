@@ -20,7 +20,7 @@ const serve = (port, filename, dir, userProxy) => {
         }));
     }
     else {
-        const packagePath = require.resolve('local-client/build/index.html');
+        const packagePath = require.resolve('@cujsnote/local-client/build/index.html');
         app.use(express_1.default.static(path_1.default.dirname(packagePath)));
     }
     app.use((0, cors_1.default)());

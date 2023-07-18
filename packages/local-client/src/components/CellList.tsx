@@ -20,6 +20,7 @@ const CellList: React.FC = () => {
 
     useEffect(() => {
         fetchCells();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const renderedCells = cells.map((cell) => (
