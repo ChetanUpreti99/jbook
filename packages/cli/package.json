@@ -1,6 +1,6 @@
 {
   "name": "cujsnote",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cujsnote/local-client": "^1.0.0"
+    "@cujsnote/local-client": "^1.0.2"
   },
   "devDependencies": {
-    "@cujsnote/local-api": "^1.0.0",
+    "@cujsnote/local-api": "^1.0.2",
     "@types/node": "^20.4.2",
     "commander": "^11.0.0",
     "esbuild": "0.8.26",
