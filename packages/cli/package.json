@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@cujsnote/local-api": "^1.0.0",
-    "commander": "^11.0.0",
     "@types/node": "^20.4.2",
+    "commander": "^11.0.0",
     "esbuild": "0.8.26",
     "typescript": "^5.1.6"
   }

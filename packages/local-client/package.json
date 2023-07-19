@@ -1,6 +1,6 @@
 {
   "name": "@cujsnote/local-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "publishConfig": {
     "access": "public"
@@ -8,7 +8,6 @@
   "files": [
     "build"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@monaco-editor/react": "3.7.5",
