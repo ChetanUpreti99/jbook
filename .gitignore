@@ -3,6 +3,7 @@
 # dependencies
 /packages/cli/node_modules
 /packages/local-api/node_modules
+/packages/cli/dist
 .pnp.js
 
 

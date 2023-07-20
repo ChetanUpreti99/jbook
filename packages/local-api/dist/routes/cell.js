@@ -29,7 +29,12 @@ const createCellsRouter = (filename, dir) => {
             // parse a list of cells out of it.
             // Send list of cells back to the browser
             const result = yield promises_1.default.readFile(fullPath, { encoding: 'utf-8' });
-            res.send(JSON.parse(result));
+            if (result && result.length) {
+                res.send(JSON.parse(result));
+            }
+            else {
+                res.send([]);
+            }
         }
         catch (error) {
             if (isLocalApiError(error)) {

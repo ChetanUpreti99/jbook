@@ -6,10 +6,6 @@ import {
 	MoveCellAction,
 	InsertCellAfterAction,
 	DeleteCellAction,
-	FetchCellsAction,
-	FetchCellsCompleteAction,
-	FetchCellsErrorAction,
-	SaveCellsErrorAction,
 	Direction,
 	Action
 } from "../actions";
@@ -86,6 +82,16 @@ export const fetchCells = () => {
 
 		try {
 			const { data }: { data: Cell[] } = await axios.get("/cells");
+			if (data && !data.length) {
+				dispatch({
+					type: ActionType.INSERT_CELL_AFTER,
+					payload: {
+						id: null,
+						type: 'code',
+					}
+				});
+				return;
+			}
 			dispatch({
 				type: ActionType.FETCH_CELLS_COMPLETE,
 				payload: data
